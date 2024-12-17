@@ -19,8 +19,8 @@
 }
 
 body, html {
-    background-color: var(--corPrincipal);
-    color: var(--corBranco);
+    background-color: var(--corBranco);
+    color: var(--corCinzaEscuro);
     height: 100vh;
     width: 100vw;
 
@@ -38,34 +38,24 @@ main {
 
 section#login {
 
-    width: 80%;
-    height: 90%;
+    width: 70%;
+    height: 80%;
     display: flex;
-    flex-direction: column; /* Alinha os filhos em coluna */
+    flex-direction: column; 
     overflow: hidden;
 
 }
 
 section#login > div#imagemCoruja {
 
-    background: url('../imagens/skoob1.jpg') no-repeat center;
-    background-size: 90%; 
+    background: url('../imagens/skoob.jpg') no-repeat center;
+    background-size: 80%; 
     background-position: center;
     width: 100%; 
-    height: 30%; /* Define a altura proporcional ao container */
+    height: 40%; 
 }
 
-section#login > div#imagemNome {
 
-    background: url('../imagens/skoob_sem_fundo.png') no-repeat center;
-    background-size: 40%; 
-    background-position: center;
-    width: 100%; 
-    height: 50px;
-    margin-block-end: 20px;
-    position: relative;
-    top: -30px;
-}
 
 div#formulario > h1 {
 
@@ -84,24 +74,6 @@ div#formulario > p {
 
 }
 
-a {
-    text-decoration: none;
-    color: var(--corBranco);
-}
-
-
-
-form > div.campo {
-
-    background-color: var(--corBranco);
-    border: 2px solid #101d14;
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
-    margin: 5px 0px;
-}
-
 
 div#campo > input {
 
@@ -109,10 +81,18 @@ div#campo > input {
     font-size: 1em;
     width: 100%;
     height: 90%;
-    border: 0px;
     border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     padding: 10px;
     transform: translateY(-3.5px);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -122,18 +102,45 @@ form > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: var(--corPreto);
+    background-color: var(--corPrincipal);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.405);
 }
+
+form > input[type=submit]:hover {
+
+    background-color: var(--corPreto);
+    color: var(--corBranco);
+}
+
+a {
+    text-decoration: none;
+    color: var(--corPrincipal);
+
+}
+
+a:hover {
+    color: var(--corPreto);
+}
+
+a.botao {
+    color: var(--corCinzaEscuro);
+    font-size: 0.8em;
+    text-align: start;
+    margin-bottom: -5px;
+}
+
 
 h2 {
     font-size: 0.9em;
     margin-top: 10px; 
     font-family: var(--fontePadrao);
+    text-align: center;
 
 }
+
