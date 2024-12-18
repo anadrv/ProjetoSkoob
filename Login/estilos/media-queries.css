@@ -1,69 +1,67 @@
 @charset "UTF-8";
 
-    
-    @media screen and (min-width: 992px) {
-    
-    
-        body {
-            background-color: var(--corAzulClaro);
-        }
-    
-        header {
-            display: none;
-        }
-        
-    
-        section#login {
-    
-            width: 50%;
-            height: 65%;
-            background-color: #3B82B8;
-            border-radius: 15px;
-            flex-direction: row; 
-            justify-content: flex-start; 
-            align-items: flex-start; 
-            
-            
-        }
-        
-        section#login > div#imagemCoruja {
-    
-            background: url(../imagens/Login-01.jpg) no-repeat center; 
-            width: 80%;
-            height: 80%;
-            background-size: 50%;
-    
-            
-        }
-    
-        section#login > div#formulario {
-    
-            display: block;
-            padding: 10px;
-            background-color: var(--corBranco);
-            width: 140%;
-            height: 100%;      
-        
-        }
-    
-        div#formulario > h1 {
-    
-            text-align: start;
-            margin-top: 20px;
-            font-size: 1.5em;
-        
-        }
-        
-        div#formulario > p {
-        
-            font-size: 0.9em;
-            margin-top: 10px;
-            margin-bottom: 30px;
-            text-align: justify;
-        
-        }
-   
-    
-    } 
-    
+@media screen and (min-width: 992px) {
+    body {
+        background-color: var(--corAzulClaro);
+    }
 
+    header {
+        display: none;
+    }
+
+    section#login {
+        width: 50%;
+        height: 65%;
+        background-color: #3B82B8;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.295);
+    }
+
+    section#login > div#imagemCoruja {
+        background: url(../imagens/Login-01.jpg) no-repeat center;
+        width: 80%;
+        height: 80%;
+        margin-top: 3%;
+        background-size: 50%;
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+        align-items: center;
+ 
+    }
+
+    section#login > div#imagemCoruja > p {
+        color: var(--corBranco);
+        font-size: 0.8em;
+        margin: 10%;
+        margin-top: 100%;
+        text-align: justify;
+
+
+    }
+
+    section#login > div#formulario {
+        display: block;
+        padding: 30px;
+        background-color: var(--corBranco);
+        width: 140%;
+        height: 100%;
+    }
+
+    div#formulario > h1 {
+        text-align: start;
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    div#formulario > p {
+        font-size: 0.9em;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+}
