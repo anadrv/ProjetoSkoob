@@ -26,10 +26,19 @@ body, html {
 
 }
 
+header {
+    background-color: #3C82C0;
+    height: 50px;
+}
+
+#frase {
+    display: none;
+}
+
 main {
     
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 50px);
     width: 100vw;
     display: flex;
     justify-content: center; 
@@ -133,6 +142,10 @@ a.botao {
     font-size: 0.8em;
     text-align: start;
     margin-bottom: -5px;
+}
+
+a.botao:hover {
+    color: var(--corPreto);
 }
 
 
