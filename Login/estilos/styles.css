@@ -31,7 +31,7 @@ header {
     height: 50px;
 }
 
-#frase {
+section#login > div#imagemCoruja > p {
     display: none;
 }
 
